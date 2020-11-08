@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_marginVertical="50dp"
+        android:textSize="40dp"
+        android:textColor="#03A9F4"
+        android:id="@+id/sign_up_note"
+        android:fontFamily="cursive"
+        android:textAlignment="center"/>
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter your username"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/sign_up_note"
+        android:id="@+id/signup_username"/>
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_username"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:layout_marginVertical="20dp"
+        android:inputType="textPassword"
+        android:id="@+id/signup_password"/>
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_phoneNo"
+        android:layout_below="@+id/signup_password"
+        android:layout_centerHorizontal="true"
+        android:hint="Phone No."
+        android:inputType="phone"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_proceed_bt"
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:layout_below="@id/signup_phoneNo"
+        android:background="@drawable/signin_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="30dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="#FFF"
+        android:text="Alreaady have an account"
+        android:layout_below="@+id/signup_proceed_bt"
+        android:layout_centerHorizontal="true"
+        android:onClick="moveToSignIn"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_in_note"
+        android:text="Sign in"
+        android:textColor="#2196F3"
+        android:textSize="50sp"
+        android:layout_marginVertical="50dp"
+        android:fontFamily="cursive"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sign_in_note"
+        android:layout_marginTop="100dp"
+        android:id="@+id/sign_in_user_name"
+        android:hint="Enter user name or E-mail"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in_user_name"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="password"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:id="@+id/sign_in_password"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:id="@+id/signin_bt"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/signin_bt"
+        android:layout_marginVertical="420dp"/>
+
+    <Button
+        android:id="@+id/forgot_password_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="500dp"
+        android:background="@drawable/signin_bt"
+        android:text="Forgot Password"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:visibility="gone" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="600dp"
+        android:layout_centerHorizontal="true"
+        android:text="Create an Account"
+        android:backgroundTint="#fff"
+        android:onClick="moveToSignup"
+        android:textColor="@color/colorAccent"/>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:background="#636060"
+        android:id="@+id/heading"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:text="@string/expense"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="#FFF"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:text="@string/price"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="#FFF"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:text="@string/date"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="#FFF"/>
+        </TableRow>
+    </TableLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@+id/heading">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:textSize="15sp"
+                    android:id="@+id/expense"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:textSize="15sp"
+                    android:id="@+id/price"
+                    android:gravity="center_horizontal"
+                    />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:textSize="15sp"
+                    android:id="@+id/date"
+                    android:gravity="center_horizontal" />
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+</RelativeLayout>
